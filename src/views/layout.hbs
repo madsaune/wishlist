@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">
+      <a href="/" class="header__title-link">Wishlist</a>
+    </h1>
+
+    <nav class="nav" role="navigation">
+      <div class="nav__item">
+          <a href="/" class="nav__item-link">Home</a>
+      </div>
+
+      <div class="nav__item">
+        <a href="/list" class="nav__item-link">My List</a>
+      </div>
+
+      <div class="nav__item">
+        <a href="/claims" class="nav__item-link">My Claims</a>
+      </div>
+
+      <div class="nav__item">
+        <a href="/people" class="nav__item-link">People</a>
+      </div>
+
+      <div class="nav__item">
+        <a href="/account" class="nav__item-link">Account</a>
+      </div>
+
+      <div class="nav__item">
+        <a href="/logout" class="nav__item-link">Logout</a>
+      </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    {{#each success}}
+    <div class="alert alert--success" role="alert">
+      <i class="fa fa-times"></i>
+      <p class="alert__message">{{ this.message }}</p>
+    </div>
+    {{/each}}
+
+    {{{body}}}
+
+    <footer class="footer mt-2">
+      <p>Made with <i class="fas fa-heart"></i> by Mads Moi-Aune - 2020</p>
+      <div class="social">
+        <a class="social__link social__link--github" href="https://github.com/madsaune/wishlist">
+          <i class="fab fa-github"></i> Github
+        </a>
+
+        <a class="social__link social__link--twitter" href="https://twitter.com/dotpwsh">
+          <i class="fab fa-twitter"></i> @dotpwsh</a>
+      </div>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<div class="grid">
+  <div class="section">
+    <div class="section__header">
+      <h2 class="section__header-title">Mario Party (Nintendo Switch)</h2>
+      <span class="section__header-divider"></span>
+    </div>
+
+    <div class="section__body">
+      <form action="/item/1/edit" method="PUT">
+        <div class="form-group">
+          <label for="item-name">Name</label>
+          <input type="text" id="item-name" class="form-control" value="Mario Party (Nintendo Switch)">
+        </div>
+
+        <div class="form-group">
+          <label for="item-price">Price</label>
+          <input type="text" id="item-price" class="form-control" value="699 NOK">
+        </div>
+        
+        <div class="form-group">
+          <label for="item-url">URL</label>
+          <input type="text" id="item-url" class="form-control" value="https://www.elkjop.no/product/gaming/spill/spill-nintendo-switch/SWISUPERMARP/super-mario-party-switch">
+        </div>
+
+        <div class="button-group">
+          <button id="submit-item" class="btn btn--p">
+            <i class="fas fa-save"></i> Save
+          </button>
+
+          <a href="/user/1/item/1/delete" class="btn btn--p">
+            <i class="fas fa-trash-alt"></i> Delete
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
